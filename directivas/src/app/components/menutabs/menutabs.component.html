@@ -1,0 +1,32 @@
+<section class="tabs">
+    <nav>
+        <ul>
+            <li [ngClass]="{'active':seccionActual === 'london'}" (click)="cambiarSeccion('london')">London</li>
+            <li [ngClass]="{'active':seccionActual === 'madrid'}" (click)="cambiarSeccion('madrid')">Madrid</li>
+            <li [ngClass]="{'active':seccionActual === 'paris'}" (click)="cambiarSeccion('paris')">Paris</li>
+        </ul>
+    </nav>
+    <div *ngIf="seccionActual === 'london'" class="content">
+        <h3>London</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea rem tempora a quae accusamus nobis accusantium eveniet temporibus quas, sint hic assumenda excepturi nulla odio, laboriosam ratione, consectetur molestiae.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi natus deserunt consectetur sint minima dolorum, veniam quia, commodi molestiae pariatur hic, nostrum esse officia reiciendis. Obcaecati rerum debitis aliquid blanditiis.</p>
+    </div>
+    <div *ngIf="seccionActual === 'madrid'" class="content">
+        <h3>Madrid</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea rem tempora a quae accusamus nobis
+            accusantium eveniet temporibus quas, sint hic assumenda excepturi nulla odio, laboriosam ratione, consectetur
+            molestiae.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi natus deserunt consectetur sint minima dolorum,
+            veniam quia, commodi molestiae pariatur hic, nostrum esse officia reiciendis. Obcaecati rerum debitis aliquid
+            blanditiis.</p>
+    </div>
+    <div *ngIf="seccionActual === 'paris'" class="content">
+        <h3>Paris</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea rem tempora a quae accusamus nobis
+            accusantium eveniet temporibus quas, sint hic assumenda excepturi nulla odio, laboriosam ratione, consectetur
+            molestiae.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi natus deserunt consectetur sint minima dolorum,
+            veniam quia, commodi molestiae pariatur hic, nostrum esse officia reiciendis. Obcaecati rerum debitis aliquid
+            blanditiis.</p>
+    </div>
+</section>

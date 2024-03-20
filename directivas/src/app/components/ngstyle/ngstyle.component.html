@@ -1,0 +1,10 @@
+<p [ngStyle]="{'font-size': tamano+'px'}" class="parrafo">En un lugar de La Mancha</p>
+<input type="range" min="10" max="60" value="30" step="5" (input)="changeSize($event)">
+<hr>
+<h1>TWO WAYS DATA BIDING</h1>
+<!-- TWO WAY DATA Necesita importar en modulo principal la libreria  FormsModule -->
+<input type="text" placeholder="introduce clave css" [(ngModel)]="claveCss">
+<hr>
+<input type="text" placeholder="introduce valor css" [(ngModel)]="valorCss">
+<button (click)="capturarValores()" >Aplicar</button>
+<p [ngStyle]="estilosParrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque animi sequi incidunt labore sunt porro ipsa in aperiam dolore veritatis facilis obcaecati delectus, vero praesentium blanditiis sed placeat consequatur iste.</p>

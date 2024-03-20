@@ -1,0 +1,13 @@
+<p>films works!</p>
+<section class="films">
+    <h3>{{titleSection}}</h3>
+    <div>
+        <article class="film" *ngFor="let film of myFilms">
+
+            <figure>
+                <img [src]="film.image" [alt]="film.title">
+            </figure>
+            <h3>{{film.title}}</h3>
+        </article>
+    </div>
+</section>

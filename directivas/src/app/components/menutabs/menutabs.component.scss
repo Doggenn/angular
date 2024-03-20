@@ -1,0 +1,28 @@
+.tabs{
+    max-width: 50%;
+    margin: 0 auto;
+    & nav{
+        background-color: black;
+        color: white;
+        & ul{
+            display: flex;
+            justify-content: space-around;
+            & li {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                cursor: pointer;
+                &:hover {
+                    background-color: grey;
+                }
+                &.active{
+                    background-color: grey;
+                }
+            }
+        }        
+    }
+    & .content{
+        border: 1px solid black;
+        padding: 20px;
+    }
+}

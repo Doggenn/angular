@@ -1,0 +1,13 @@
+
+<ul class="films">
+    <li *ngFor="let Section of sectionFilms">
+        {{Section.section}}
+    </li>
+</ul>
+
+<ul class="films">
+    <p *ngFor="let Section of sectionFilms">{{Section.section}}</p>
+    <li *ngFor="let Film of filmsGallery" >
+        {{Film.image}} - {{Film.title}}
+    </li>
+</ul>

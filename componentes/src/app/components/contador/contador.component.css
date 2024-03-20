@@ -1,0 +1,14 @@
+.contador{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: beige;
+    margin: 10px;
+}
+.contador p{
+    font-size: 200%;
+}

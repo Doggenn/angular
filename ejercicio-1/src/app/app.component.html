@@ -1,0 +1,6 @@
+<select (change)="onCityChange($event)" >
+  <option [value]="cities[0]"></option>
+  <option [value]="cities[1]">{{cities[1]}}</option>
+  <option [value]="cities[2]">{{cities[2]}}</option>
+</select>
+<h1>Vivo en: {{selectedCity}} </h1>

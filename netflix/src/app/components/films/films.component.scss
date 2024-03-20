@@ -1,0 +1,17 @@
+.films>div{
+    display: flex;
+}
+@for $i from 1 through 100{
+    article:nth-child(#{$i})::before{
+        content: '#{$i}';
+        position: relative;
+        font-size: 600%;
+        top: 150px;
+        left: 10px;
+        z-index: 50px;
+    }
+}
+article figure{
+    z-index: 1;
+    position: relative;
+}

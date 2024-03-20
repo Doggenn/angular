@@ -1,0 +1,12 @@
+<div class="box"  style="width: 500px;">
+    <div  class="box">
+        <button class="btn" (click)="mostrarL()">London</button>
+        <button class="btn" (click)="mostrarP()">Paris</button>
+        <button class="btn" (click)="mostrarT()">Tokyo</button>
+    </div>
+    <div class="box box2" >
+        <p *ngIf="london">London is the capital city of England.</p>
+        <p *ngIf="paris">Paris is the capital of France.</p>
+        <p *ngIf="tokyo">Tokyo is the capital of Japan.</p>
+    </div>
+</div>
